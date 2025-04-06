@@ -176,10 +176,6 @@ Then in settings.json:
     "[python]": {
         "editor.defaultFormatter": "ms-python.black-formatter"
     },
-
-    // Python formatter and linter setup
-    "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true,
 }
 ```
 
