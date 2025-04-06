@@ -10,16 +10,16 @@ Here’s how to set up **linters** for both stacks, with configs you can copy an
 * **for React/Javascript**
 ```bash
 # Download .prettierrc from a GitHub repo
-curl -O https://github.com/permadihendra/code_formatter/blob/main/javascript/.prettierrc
+curl -O https://github.com/permadihendra/code_formatter/javascript/.prettierrc
 
 # Download .eslintrc.json
-curl -O https://github.com/permadihendra/code_formatter/blob/main/javascript/.eslintrc.json
+curl -O https://github.com/permadihendra/code_formatter/javascript/.eslintrc.json
 
 ```
 * **for Python**
 ```bash
 # Download .flake8
-curl -O https://github.com/permadihendra/code_formatter/blob/main/python/.flake8
+curl -O https://github.com/permadihendra/code_formatter/python/.flake8
 ```  
 
 ---
