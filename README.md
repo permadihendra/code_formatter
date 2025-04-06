@@ -5,6 +5,24 @@ Using **linters** helps you enforce **consistent code style** in both your **fro
 Here’s how to set up **linters** for both stacks, with configs you can copy and use right away:
 
 ---
+## **✅ Download only files needed directly**
+
+* **for React/Javascript**
+```bash
+# Download .prettierrc from a GitHub repo
+curl -O https://github.com/permadihendra/code_formatter/blob/main/javascript/.prettierrc
+
+# Download .eslintrc.json
+curl -O https://github.com/permadihendra/code_formatter/blob/main/javascript/.eslintrc.json
+
+```
+* **for Python**
+```bash
+# Download .flake8
+curl -O https://github.com/permadihendra/code_formatter/blob/main/python/.flake8
+```  
+
+---
 
 ## **✅ 1. React + JavaScript/TypeScript**
 
@@ -134,12 +152,34 @@ Then in settings.json:
 
 ```
 {
-  "editor.formatOnSave": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll": true
-  },
-  "python.formatting.provider": "black",
-  "python.linting.flake8Enabled": true
+  // Enable format on save
+    "editor.formatOnSave": true,
+
+    // Default formatter
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+   
+    // Default formatter for JavaScript/React
+    "[javascript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "esbenp.prettier-vscode"
+    },
+
+    // Default formatter for Python
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.black-formatter"
+    },
+
+    // Python formatter and linter setup
+    "python.linting.enabled": true,
+    "python.linting.flake8Enabled": true,
 }
 ```
 
